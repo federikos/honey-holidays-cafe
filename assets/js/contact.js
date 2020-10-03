@@ -80,7 +80,7 @@ $(document).ready(function(){
         })
     })
 
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
+    $('contactForm').on('submit', function(e) {
         e.preventDefault();
 
         Email.send({
